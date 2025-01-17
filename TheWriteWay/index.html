@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheWriteWay</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="left-section">
+                <button class="hamburger-menu" id="menuButton" aria-label="Menu">
+                    <div class="hamburger-lines">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
+                </button>
+                <div class="menu-dropdown hidden">
+                    <div class="menu-item">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </div>
+                    <div class="menu-item">
+                        <i class="fas fa-bookmark"></i>
+                        <span>Saved Articles</span>
+                    </div>
+                    <div class="menu-item">
+                        <i class="fas fa-history"></i>
+                        <span>Reading History</span>
+                    </div>
+                    <div class="menu-item">
+                        <i class="fas fa-cog"></i>
+                        <span>Settings</span>
+                    </div>
+                    <div class="menu-item">
+                        <i class="fas fa-question-circle"></i>
+                        <span>Help & Support</span>
+                    </div>
+                </div>
+                <div class="logo">TheWriteWay</div>
+            </div>
+            <div class="menu-container">
+                <div class="menu-dropdown hidden">
+                    <div class="menu-section">
+                        <h3>Discover</h3>
+                        <a href="#"><i class="fas fa-compass"></i> Explore Topics</a>
+                        <a href="#"><i class="fas fa-fire"></i> Trending</a>
+                        <a href="#"><i class="fas fa-bookmark"></i> Reading List</a>
+                    </div>
+                    <div class="menu-section">
+                        <h3>Create</h3>
+                        <a href="#"><i class="fas fa-edit"></i> Write Story</a>
+                        <a href="#"><i class="fas fa-users"></i> Publications</a>
+                        <a href="#"><i class="fas fa-chart-line"></i> Analytics</a>
+                    </div>
+                    <div class="menu-section">
+                        <h3>More</h3>
+                        <a href="#"><i class="fas fa-cog"></i> Settings</a>
+                        <a href="#"><i class="fas fa-question-circle"></i> Help Center</a>
+                        <a href="#"><i class="fas fa-moon"></i> Dark Mode</a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="search-container">
+                    <input type="text" placeholder="Search..." id="search">
+                    <i class="fas fa-search"></i>
+                </div>
+                <button class="write-btn">Write</button>
+                <div class="profile-menu">
+                    <div class="profile-icon" id="profileIcon">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="auth-dropdown hidden">
+                        <div class="auth-header">
+                            <h3>Sign In</h3>
+                            <p>Welcome to TheWriteWay</p>
+                        </div>
+                        <div class="social-auth">
+                            <button class="auth-btn google">
+                                <i class="fab fa-google"></i>
+                                Continue with Google
+                            </button>
+                            <button class="auth-btn github">
+                                <i class="fab fa-github"></i>
+                                Continue with GitHub
+                            </button>
+                            <button class="auth-btn facebook">
+                                <i class="fab fa-facebook"></i>
+                                Continue with Facebook
+                            </button>
+                        </div>
+                        <div class="auth-divider">
+                            <span>or</span>
+                        </div>
+                        <form class="email-auth">
+                            <input type="email" placeholder="Email address">
+                            <button type="submit" class="auth-btn email">
+                                <i class="fas fa-envelope"></i>
+                                Continue with Email
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="hero-section">
+            <h1>Welcome to BlogSpace</h1>
+            <p>Discover stories, thinking, and expertise from writers on any topic.</p>
+        </div>
+
+        <div class="content-container">
+            <div class="main-content">
+                <div class="tabs">
+                    <button class="tab active" data-tab="featured">Featured</button>
+                    <button class="tab" data-tab="recent">Recent</button>
+                    <button class="tab" data-tab="following">Following</button>
+                </div>
+
+                <div class="articles-container">
+                    <!-- Articles will be dynamically added here -->
+                </div>
+            </div>
+
+            <aside class="sidebar">
+                <div class="trending-topics">
+                    <h3>Trending Topics</h3>
+                    <div class="topic-tags">
+                        <span class="tag">Technology</span>
+                        <span class="tag">Writing</span>
+                        <span class="tag">Programming</span>
+                        <span class="tag">Self Improvement</span>
+                        <span class="tag">Productivity</span>
+                    </div>
+                </div>
+
+                <div class="recommended-authors">
+                    <h3>Who to Follow</h3>
+                    <div class="authors-list">
+                        <!-- Authors will be dynamically added here -->
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Write Modal -->
+    <div class="write-modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Create a Story</h2>
+                <button class="close-modal" aria-label="Close modal">×</button>
+            </div>
+            <div class="modal-body">
+                <input type="text" placeholder="Title" id="post-title">
+                <div class="editor-toolbar">
+                    <button title="Bold" aria-label="Bold"><i class="fas fa-bold"></i></button>
+                    <button title="Italic" aria-label="Italic"><i class="fas fa-italic"></i></button>
+                    <button title="Link" aria-label="Link"><i class="fas fa-link"></i></button>
+                    <button title="Image" aria-label="Image"><i class="fas fa-image"></i></button>
+                </div>
+                <textarea placeholder="Tell your story..." id="post-content"></textarea>
+                <div class="post-options">
+                    <select id="post-category" aria-label="Select category">
+                        <option value="">Select Category</option>
+                        <option value="technology">Technology</option>
+                        <option value="writing">Writing</option>
+                        <option value="programming">Programming</option>
+                        <option value="self-improvement">Self Improvement</option>
+                    </select>
+                    <input type="text" placeholder="Add tags (comma separated)" id="post-tags">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="save-draft">Save Draft</button>
+                <button class="publish">Publish</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About TheWriteWay</h4>
+                <p>A place to write, read, and connect</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="#about">About</a>
+                <a href="#help">Help</a>
+                <a href="#terms">Terms</a>
+                <a href="#privacy">Privacy</a>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="https://x.com/_alok_h" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/_._alok_.123/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/alok-hotta-a35521285/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</body>
+</html>
