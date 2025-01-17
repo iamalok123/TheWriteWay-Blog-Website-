@@ -60,21 +60,38 @@ This blog website offers a modern platform for sharing, reading, and engaging wi
     - Use the search bar to find specific articles.
     - Explore trending topics and recommended authors.
     
-    *Screenshot: Homepage showing article feed and tabs.*
+    *Homepage showing article feed and tabs.*
+
+
+   ![Screenshot 2025-01-18 000558](https://github.com/user-attachments/assets/21baf274-f31f-40b4-a517-9ac6ab1dcfd8)
+
+   
     
-2. **Writing and Publishing Articles**:
+3. **Writing and Publishing Articles**:
     - Click on the "Write Story" button in the menu.
     - Use the rich text editor to draft and format your article.
     - Add tags, featured images, and a title before publishing.
     
-    *Screenshot: Rich text editor interface.*
+    *Rich text editor interface.*
+
+
+![Screenshot 2025-01-18 000611](https://github.com/user-attachments/assets/2bf75a8f-9a01-4f5c-9661-4db5bdab89bb)
+
+
+   
     
-3. **Engaging with Content**:
+5. **Engaging with Content**:
     - Like or bookmark articles using interactive buttons.
     - Comment on articles to start discussions.
     
-    *Screenshot: Article page with interaction buttons and comments section.*
+    *Article page with interaction buttons and comments section.*
     
+
+
+![Screenshot 2025-01-18 000657](https://github.com/user-attachments/assets/da04c42c-d8cf-41fd-884c-858bf7f9aab8)
+
+
+
 
 ---
 
@@ -86,6 +103,16 @@ This blog website offers a modern platform for sharing, reading, and engaging wi
 - **Deployment**: Hosted on a static hosting platform (Netlify).
 
 ### Architecture Diagram
+
+
+
+
+![Screenshot 2025-01-17 235657](https://github.com/user-attachments/assets/455cde5a-3ed6-4dc2-9172-10c9d078e95c)
+
+
+
+
+
 
 ---
 
