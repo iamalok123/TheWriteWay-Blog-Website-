@@ -1,7 +1,7 @@
 # TheWriteWay (Blog Website)
 
 ---
-Project Link :- [https://graceful-llama-1bb9f7.netlify.app/](https://the-write-way-123.netlify.app/)
+Project Link :- [https://the-write-way-123.netlify.app/](https://the-write-way-123.netlify.app/)
 ---
 GitHub Project Reposetry :- [https://github.com/iamalok123/TheWriteWay-Blog-Website-.git](https://github.com/iamalok123/TheWriteWay-Blog-Website-.git)
 ---
