@@ -3,8 +3,6 @@
 ---
 Project Link :- [https://the-write-way-123.netlify.app/](https://the-write-way-123.netlify.app/)
 ---
-GitHub Project Reposetry :- [https://github.com/iamalok123/TheWriteWay-Blog-Website-.git](https://github.com/iamalok123/TheWriteWay-Blog-Website-.git)
----
 
 ## 1. Introduction/Overview
 
